@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="springHelloWorld" class="net.SpringHelloWorld" init-method="beanInit" destroy-method="beanDestroy">
+        <property name="helloMessage" value="1) Spring was started!"/>
+        <property name="today" value="2)Today spring"/>
+    </bean>
+
+    <bean class="net.BeanPostProcessorImpl"/>
+
+    <bean id="hello2" class="net.Hello2" parent="springHelloWorld" init-method="beanInit" destroy-method="beanDestroy">
+        <property name="helloMessage" value="1) Hello2 started!"/>
+        <property name="today" value="2) Hello2 today"/>
+    </bean>
+
+</beans>
