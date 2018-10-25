@@ -1,5 +1,4 @@
-import examDependencies.ExamRunner;
-import net.SpringHelloWorldRunner;
+import collectionInjection.CollectionInjectionRunner;
 
 public class Runner {
     public static void main(String[] args) {
@@ -8,6 +7,7 @@ public class Runner {
         //2) Example
         //SpringHelloWorldRunner springHelloWorldRunner = new SpringHelloWorldRunner();
         //3) Example for collections
+        CollectionInjectionRunner collectionInjectionRunner = new CollectionInjectionRunner();
 
     }
 }
