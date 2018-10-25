@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 public class SpringHelloWorldRunner {
-    public static void main(String[] args) {
+    public SpringHelloWorldRunner() {
         //IOC-контейнеры
         //1 ClassPathXmlApplicationContext
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-hello-bean.xml");
@@ -20,7 +20,7 @@ public class SpringHelloWorldRunner {
         springHelloWorld.getHelloMessage();
 
         SpringHelloWorld springHelloWorld2 = (SpringHelloWorld) context.getBean("springHelloWorld");
-       // springHelloWorld.setHelloMessage("Hey vasia");
+        // springHelloWorld.setHelloMessage("Hey vasia");
         springHelloWorld2.getHelloMessage();
         ((ClassPathXmlApplicationContext) context).registerShutdownHook();
 
