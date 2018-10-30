@@ -18,7 +18,7 @@ public class Runner {
         //7) AOP XML
         //AopDeveloperRunner aop = new AopDeveloperRunner();
         //8) AOP annotations
-        AopDeveloperRunnerAnn aop = new AopDeveloperRunnerAnn();
+        //AopDeveloperRunnerAnn aop = new AopDeveloperRunnerAnn();
 
     }
 }

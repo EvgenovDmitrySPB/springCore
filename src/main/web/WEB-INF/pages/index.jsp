@@ -11,6 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  <h3><a href="/developer">Add Developer</a></h3>
   </body>
 </html>
