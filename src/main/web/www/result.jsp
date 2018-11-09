@@ -25,7 +25,7 @@
     </tr>
     <tr>
         <td>Specialty</td>
-        <td>${specilaty}</td>
+        <td>${specialty}</td>
     </tr>
     <tr>
         <td>Experience</td>
