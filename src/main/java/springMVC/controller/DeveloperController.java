@@ -5,7 +5,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.portlet.ModelAndView;
+import org.springframework.web.servlet.ModelAndView;
 import springMVC.model.Developer;
 
 @Controller
@@ -16,7 +16,7 @@ public class DeveloperController {
         return "/index";
     }
 
-    @RequestMapping(value = "/addDeveloper", method = RequestMethod.GET)
+    @RequestMapping(value = "/developer", method = RequestMethod.GET)
     public ModelAndView developer(){
         return new ModelAndView("developer", "command", new Developer());
     }
